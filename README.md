@@ -136,8 +136,9 @@ Wait for all services to show `Up` status (usually 20-30 seconds).
 | Service | URL | Purpose |
 |---------|-----|---------|
 | Registration Service | http://localhost:8080 | User registration & REST API |
+| **Audit Logs UI** | **http://localhost:8080/logs.html** | **View system audit logs dashboard** |
+| Audit Service API | http://localhost:8081/api/audit/logs | REST API for audit logs |
 | Email Service | http://localhost:8082 | Email event consumer |
-| Audit Service | http://localhost:8081/api/audit/logs | View audit logs |
 | RabbitMQ Management | http://localhost:15672 | Monitor RabbitMQ (root/root) |
 
 ## 📝 How to Test
@@ -192,16 +193,27 @@ email-service | 2026-06-08T20:41:43.214Z INFO 1 --- [EmailService] Received regi
 
 ### 3. View Audit Logs
 
-Send a GET request to retrieve all audit logs:
+Open the logs dashboard in your browser:
+
+**URL:**
+```
+http://localhost:8080/logs.html
+```
+
+This page will display a formatted table of all system audit logs with auto-refresh every 5 seconds.
+
+**Alternative - Using REST API:**
+
+You can also fetch logs directly via the Registration Service endpoint:
 
 **Using curl:**
 ```bash
-curl http://localhost:8081/api/audit/logs
+curl http://localhost:8080/logs
 ```
 
 **Using PowerShell:**
 ```powershell
-Invoke-WebRequest -Uri "http://localhost:8081/api/audit/logs" -Method GET | ConvertFrom-Json
+Invoke-WebRequest -Uri "http://localhost:8080/logs" -Method GET | ConvertFrom-Json
 ```
 
 **Expected Response:**
@@ -232,9 +244,9 @@ In the RabbitMQ Management Console, you can:
 ![Screenshot 1 - API Response]
 *Add screenshot here showing successful user registration API response*
 
-### Screenshot 2: Audit Service - Retrieved Logs
-![Screenshot 2 - Audit Logs]
-*Add screenshot here showing audit logs from PostgreSQL via Audit Service REST endpoint*
+### Screenshot 2: Audit Logs Dashboard
+![Screenshot 2 - Audit Logs Dashboard]
+*Add screenshot here showing the System Activity Logs dashboard at http://localhost:8080/logs.html with the audit log table*
 
 ### Screenshot 3: RabbitMQ Management Console
 ![Screenshot 3 - RabbitMQ Dashboard]
@@ -321,8 +333,10 @@ docker-compose logs rabbitmq
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/register` | Register a new user |
+| GET | `/logs` | Fetch all audit logs (JSON API) |
+| GET | `/logs.html` | View audit logs in web dashboard |
 
-**Request Body:**
+**Registration Endpoint Request Body:**
 ```json
 {
   "name": "string",
@@ -335,7 +349,7 @@ docker-compose logs rabbitmq
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/audit/logs` | Retrieve all audit logs |
+| GET | `/api/audit/logs` | Retrieve all audit logs (internal API) |
 
 ## 🔧 Configuration Files
 
