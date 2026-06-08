@@ -3,6 +3,7 @@ package org.emailservice.config;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.support.converter.JacksonJsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -77,6 +78,11 @@ public class RabbitConfig {
                 .bind(auditQueue)
                 .to(auditExchange)
                 .with(auditRoutingKey);
+    }
+
+    @Bean
+    public MessageConverter messageConverter() {
+        return new JacksonJsonMessageConverter();
     }
 
     public String getAuditExchangeName() {
