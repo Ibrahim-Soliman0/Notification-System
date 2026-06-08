@@ -240,17 +240,16 @@ In the RabbitMQ Management Console, you can:
 
 ## 📸 Screenshots
 
-### Screenshot 1: Registration Service API Response
-![Screenshot 1 - API Response]
-*Add screenshot here showing successful user registration API response*
+### Screenshot 1: Registration Service
+<img width="467" height="526" alt="Screenshot 2026-06-09 000300" src="https://github.com/user-attachments/assets/50afd867-751a-468f-8973-377791da3130" />
 
 ### Screenshot 2: Audit Logs Dashboard
-![Screenshot 2 - Audit Logs Dashboard]
-*Add screenshot here showing the System Activity Logs dashboard at http://localhost:8080/logs.html with the audit log table*
+<img width="1253" height="375" alt="Screenshot 2026-06-09 000332" src="https://github.com/user-attachments/assets/d1a9da1c-0568-48d1-8967-8059b84ebb8a" />
 
 ### Screenshot 3: RabbitMQ Management Console
-![Screenshot 3 - RabbitMQ Dashboard]
-*Add screenshot here showing RabbitMQ dashboard with exchanges, queues, and message delivery metrics*
+<img width="853" height="308" alt="Screenshot 2026-06-08 234722" src="https://github.com/user-attachments/assets/f47a2138-43a1-46e5-b76c-0662a71622b5" />
+
+
 
 ## 🔄 Message Flow Diagram
 
