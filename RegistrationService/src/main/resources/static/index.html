@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #1e293b,
+                    #334155
+            );
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            color: white;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: #3b82f6;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        button:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .message {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .success {
+            color: #4ade80;
+        }
+
+        .error {
+            color: #f87171;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1 class="title">User Registration</h1>
+        <p class="subtitle">
+            RabbitMQ Registration Demo
+        </p>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                        type="number"
+                        id="age"
+                        min="1"
+                        max="120"
+                        placeholder="Enter your age"
+                        required>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                Register User
+            </button>
+
+        </form>
+
+        <div id="message" class="message"></div>
+
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('registrationForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const messageDiv = document.getElementById('message');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        messageDiv.textContent = '';
+        messageDiv.className = 'message';
+
+        const payload = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            age: Number(document.getElementById('age').value)
+        };
+
+        try {
+            const response = await fetch(
+                'http://localhost:8080/register',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                }
+            );
+
+            if (!response.ok) {
+                throw new Error('Registration failed');
+            }
+
+            messageDiv.textContent =
+                'User registered successfully. Event published to RabbitMQ.';
+            messageDiv.classList.add('success');
+
+            form.reset();
+
+        } catch (error) {
+            messageDiv.textContent =
+                'Unable to register user. Please try again.';
+            messageDiv.classList.add('error');
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Register User';
+    });
+</script>
+
+</body>
+</html>

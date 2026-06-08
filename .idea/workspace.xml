@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14fcfe0a-f5b2-4f1a-9a62-5e9f6bd80e7d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="79" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ibrahim-Soliman0&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ibrahim-Soliman0/ITI.git&quot;,
+    &quot;accountId&quot;: &quot;e52fdcad-c769-478f-af5f-509782fae6cb&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.5842912448652458" />
+      <entry key="MS500" value="4.530755723325409" />
+      <entry key="S2" value="12.443786571044374" />
+      <entry key="S5" value="24.49089641135815" />
+      <entry key="S10" value="34.87726742088488" />
+      <entry key="S30" value="46.22971401828445" />
+      <entry key="S60" value="49.906634209424034" />
+      <entry key="M2" value="52.25292515429004" />
+      <entry key="M5" value="61.96578586079806" />
+      <entry key="M10" value="87.00818178952555" />
+      <entry key="M15" value="127.87782964460452" />
+      <entry key="M30" value="319.7940420863916" />
+      <entry key="H1" value="662.3498924357248" />
+      <entry key="H2" value="1024.2691487623702" />
+      <entry key="H4" value="1307.5705747881607" />
+      <entry key="D1" value="1637.2647762554413" />
+      <entry key="W1" value="1706.0982022166875" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="7.691960593993266E-162" />
+      <entry key="S5" value="3.5843863952992E-65" />
+      <entry key="S10" value="5.986974524164266E-33" />
+      <entry key="S30" value="1.815804703457938E-11" />
+      <entry key="S60" value="4.261226020455934E-6" />
+      <entry key="M2" value="0.002064577976544104" />
+      <entry key="M5" value="0.09082298183871014" />
+      <entry key="M10" value="0.4789219004578222" />
+      <entry key="M15" value="1.0484501680469769" />
+      <entry key="M30" value="2.8842272557189244" />
+      <entry key="H1" value="6.103409236678182" />
+      <entry key="H2" value="12.27481734184076" />
+      <entry key="H4" value="21.19452943748925" />
+      <entry key="D1" value="37.80695192950487" />
+      <entry key="W1" value="42.2060622731076" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.518839744383746" />
+      <entry key="MS500" value="4.495021366868493" />
+      <entry key="S2" value="12.419233789527144" />
+      <entry key="S5" value="24.471355299338466" />
+      <entry key="S10" value="34.86328191752553" />
+      <entry key="S30" value="46.22351342647875" />
+      <entry key="S60" value="49.90328806795094" />
+      <entry key="M2" value="52.2531306071271" />
+      <entry key="M5" value="62.05421950613873" />
+      <entry key="M10" value="87.48373007549357" />
+      <entry key="M15" value="128.9226438588682" />
+      <entry key="M30" value="322.67456371562486" />
+      <entry key="H1" value="668.4497770108748" />
+      <entry key="H2" value="1036.5405156838378" />
+      <entry key="H4" value="1328.7621367670579" />
+      <entry key="D1" value="1675.0708465551668" />
+      <entry key="W1" value="1748.304123900952" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Er1iZZxZy9pRGmSY0k3JYN4E52" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AuditServiceApplication.executor": "Run",
+    "Spring Boot.EmailServiceApplication.executor": "Run",
+    "Spring Boot.RegistrationServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/ITI/Projects/RabbitMQ Project/Source/NotificationSystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.28064516",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ITI\Spring Remote\Notification System\NotificationSystem\SMSService" />
+      <recent name="D:\ITI\Spring Remote\Notification System\NotificationSystem\AuditService" />
+      <recent name="D:\ITI\Spring Remote\Notification System\NotificationSystem\EmailService" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="AuditServiceApplication" value="FAILED" />
+              <entry key="EmailServiceApplication" value="STOPPED" />
+              <entry key="RegistrationServiceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RegistrationServiceApplication">
+    <configuration name="AuditServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AuditService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.auditservice.AuditServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EmailService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.emailservice.EmailServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RegistrationService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.registrationservice.RegistrationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14fcfe0a-f5b2-4f1a-9a62-5e9f6bd80e7d" name="Changes" comment="" />
+      <created>1780922005374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780922005374</updated>
+      <workItem from="1780922006419" duration="21453000" />
+      <workItem from="1780951131577" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RegistrationService/src/main/java/org/registrationservice/controller/RegistrationFormController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

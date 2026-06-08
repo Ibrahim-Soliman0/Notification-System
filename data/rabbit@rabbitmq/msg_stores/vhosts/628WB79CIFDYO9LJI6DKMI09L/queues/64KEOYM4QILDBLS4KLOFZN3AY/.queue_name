@@ -1,0 +1,3 @@
+VHOST: /
+QUEUE: email.queue
+INDEX: v2

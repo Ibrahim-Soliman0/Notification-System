@@ -1,0 +1,3 @@
+VHOST: /
+QUEUE: audit.queue
+INDEX: v2

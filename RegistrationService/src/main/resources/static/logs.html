@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Logs</title>
+
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background:#0f172a;
+            color:white;
+            padding:40px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        th,td{
+            padding:12px;
+            border-bottom:1px solid #334155;
+            text-align:left;
+        }
+
+        th{
+            background:#1e293b;
+        }
+
+        button{
+            padding:10px 20px;
+            cursor:pointer;
+        }
+
+        .service{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>System Activity Logs</h1>
+
+<button onclick="loadLogs()">
+    Refresh Logs
+</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Time</th>
+        <th>Message</th>
+    </tr>
+    </thead>
+
+    <tbody id="logsBody">
+
+    </tbody>
+</table>
+
+<script>
+
+    async function loadLogs(){
+
+        try {
+            const response = await fetch("/logs");
+
+            const logs = await response.json();
+
+            const body = document.getElementById("logsBody");
+
+            body.innerHTML = "";
+
+            logs.forEach(log => {
+                const createdAt = log.createdAt ? new Date(log.createdAt).toLocaleString() : "N/A";
+                body.innerHTML += `
+                <tr>
+                    <td>${log.id || "N/A"}</td>
+                    <td>${createdAt}</td>
+                    <td>
+                        ${log.message}
+                    </td>
+                </tr>
+            `;
+            });
+        } catch (error) {
+            console.error("Error loading logs:", error);
+        }
+    }
+
+    loadLogs();
+
+    setInterval(loadLogs, 5000);
+
+</script>
+
+</body>
+</html>
